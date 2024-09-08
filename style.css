@@ -1,0 +1,49 @@
+.hello{
+    margin: auto;
+    display: block;
+    border-radius: 50%;
+    overflow:hidden;
+    width: 200px;
+    height: 200px;
+  }
+  .hello img{
+    width:100%;
+    height:100%;
+
+  }
+
+a:link{
+    font-size: 20px;  text-decoration: none;
+}
+h1{
+    text-align: center;
+}
+.menu{
+    background-color: whitesmoke;
+    margin: auto;
+    
+}
+.menu:hover{
+    
+    background-color: white;
+    
+}
+img{
+    margin: auto;
+    display: block;
+}
+header{
+    text-align: center;
+    background-color: aqua;
+}
+body{
+    background-size:cover;
+    overflow: hidden;
+    background-repeat:repeat;
+   background-image: url(./pexels-pixabay-235985\ \(1\).jpg);
+}
+a:hover{
+    color: red;
+    
+}
+    
