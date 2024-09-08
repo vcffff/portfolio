@@ -3,43 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color: black;">
-    <section>
-      <h3 style="font-weight: 300;">chat bot</h3>
-      <p>description:<br>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam quam ad maiores eligendi illum delectus ratione nulla in id? Non autem dolores et minima natus molestiae laboriosam dolorem voluptatum!</p>
-    </section>
-    <section>
-        <h2>Lorem, ipsum dolor</h2>
-web-sites
-<p>description:<br>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam quam ad maiores eligendi illum delectus ratione nulla in id? Non autem dolores et minima natus molestiae laboriosam dolorem voluptatum!</p>
-    </section>
-    <section>
-        <h2>Lorem ipsum dolor sit amet </h2>
-        <p>description:<br>
-    
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae magnam quam ad maiores eligendi illum delectus ratione nulla in id? Non autem dolores et minima natus molestiae laboriosam dolorem voluptatum!</p>
-    <h3 style="font-weight: 300;">chatbot</h3>
-        </section>
+    <title>My projects</title>
     <style>
-        section{
+        body {
+            background-color: wheat;
+            color: black;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.5s ease, color 0.5s ease;
+        }
+
+        .hello {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: gray;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+
+        .hello:hover {
+            background-color: black;
+        }
+
+        body.dark-mode {
+            background-color: #1e1e1e;
+            color: white;
+        }
+
+        .dark-mode .hello {
+            background-color: #333;
+        }
+
+        section {
             font-size: 30px;
             color: blue;
             text-align: center;
-        
         }
+
+        video {
+            width: 200px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 30px;
+            color:red;
+        }
+    .tyt{
+        background-color: white;
+        border-radius: 40px;
+        display: flex;
+    }
+    .ere{
+        background-color: blueviolet;
+        color: white;
+        font-family: cursive;
+        border-radius: 60px;
+        color:chartreuse;
+    }
+    iframe {
+        width: 400px;
+    height: 300px;
+    border: none;
+    border-radius: 30px;
+}
+.iframes, .iframe2 {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.tyr:hover{
+    color: blue;
+    transition: 0.5s ease;
+}
+.exit{
+    background-color:red;
+  text-align: center;
+}
+.exit:hover{
+    background-color:black;
+    transition: 1s ease;
+}
     </style>
+</head>
+<body>
+    <a href="#pr" style="font-weight: bold; text-decoration: underline;">my projects</a>
+    <button class="hello" id="hello">Switch to Dark Mode</button>
+
     <section>
-        <h2>Lorem ipsum dolor, sit amet</h2>
-        <h3 style="font-weight: 300;">server</h3>
+        <h3 id="tre"   style="font-weight: 300;">chat bot</h3>
+        <h2>Project 1: AI-Powered Chatbot</h2>
+        <p>This is an AI-based chatbot that helps users navigate websites by answering common questions. The chatbot uses natural language processing (NLP) and machine learning algorithms to understand user input and generate responses.</p>
+        <a href="https://github.com/username/chatbot" target="_blank" style="font-size: 20px;">View on GitHub</a>
+        <img  id="pr"src="data:image/png;base64,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" alt="AI Chatbot Project Screenshot" style="display: block; margin: 20px auto;">
     </section>
-    <video  style="width: 200px;"  autoplay loop muted>
-        <source src="/Download.mp4" type="video/mp4"  >
+    <section>
+        <h2>Project 2</h2>
+        <div class="tyt">
+        <p >description:<br>
+            Worked as the lead frontend developer, responsible for creating responsive layouts, optimizing site performance, and integrating the new design with the existing backend systems.</p>
+        </div>
+        </section>
+    <section>
+        <h2>Project 3</h2>
+        <div class="ere">
+        <p>Description:Chatbot<br>
+            Developed a real-time chat application that supports text, voice, and video messaging. The app features user authentication, chat rooms, and multimedia support to facilitate seamless communication</p>
+            
+    </section>
+<div class="iframes">
+    <iframe width="400" height="300" src=" https://www.youtube.com/embed/Wh9DAHicpmM" title="Это Портфолио Устроит Тебя на Работу Программистом" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen ></iframe>
+   <iframe width="400" height="300" src="https://www.youtube.com/embed/0ue4Z3W0x60" title="Pet-projects. Какие проекты делать начинающему фронтенд разработчику" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+  <div class="exit">
+   <h1>Back to <a  class="tyr" style="font-size: 30px;" href="./index.html">HOME</a></h1>
+</div>
+
+    <script>
+        // js
+        const hello = document.getElementById('hello');
+        const body = document.body;
+        if (localStorage.getItem('theme') === 'dark') {
+            body.classList.add('dark-mode');
+            hello.textContent = 'Switch to Light Mode';
+        }
+
         
-    </video>
-    <a href="./index.html" style="text-decoration: none; font-size: 30px; color: red;">Back to home</a>hh
+        hello.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            if (body.classList.contains('dark-mode')) {
+                hello.textContent = 'Switch to Light Mode';
+                localStorage.setItem('theme', 'dark'); 
+            } else {
+                hello.textContent = 'Switch to Dark Mode';
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 </body>
 </html>
