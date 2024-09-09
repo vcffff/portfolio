@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
 </head>
-<body style="background-color:cornflowerblue;">
+<body style="background-image: url(https://img.freepik.com/free-photo/dark-gray-acrylic-painting-wallpaper-image_53876-94670.jpg?w=996&t=st=1725862833~exp=1725863433~hmac=98e959df03bd5e3bf92a7bd8084ee5ad957dd5b200ee304578e47ae2c528ac31);">
     <form>
     <fieldset>
-        <legend>Contacts:</legend>
+        <legend style="font-size: 30px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: yellow;">Contacts:</legend>
         <style>
             .input {
   margin: 30px;
   background: none;
   border:2px solid black;
-  outline: none;
+  outline:none;
   max-width: 190px;
   padding: 10px 20px;
   font-size: 40pxpx;
   border-radius: 9999px;
   box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
-  color: #fff;
+  color: black;
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 .whse{
     background-color:red;
+    animation-name: animation;
+    animation-duration: 2s;
+    display: flex;
+     
     
 }
 .whse:hover{
     background-color: green;
+    transition: 1s ease;
+   
 }
 .exit{
     background-color:red;
@@ -43,10 +50,37 @@
 }
 #text{
     margin: 20px;
+} 
+.input {
+  border-radius: 10px;
+  outline: 2px solid #FEBF00;
+  border: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #e2e2e2;
+  outline-offset: 3px;
+  padding: 10px 5rem;
+  transition: 0.25s;
+  font-size: 40px;
 }
 
+.input:focus {
+  outline-offset: 25px;
+  background-color: #fff
+}
+@keyframes animation {
+    from {
+      translate: 200vw 0;
+      scale: 200% 4;
+    }
+  
+    to {
+      translate: 0 0;
+      scale: 100% 1;
+    }
+  }
+
         </style>
-<input placeholder="Username" class="input" name="text" type="text">
+<input type="text" placeholder="Write here..." name="text" class="input">
        <input style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;" type="submit" value="send" class="whse">
     </form>
 </fieldset>
@@ -59,7 +93,7 @@
 </form>
 <form>
     <fieldset>
-        <legend>
+        <legend style="font-size: 30px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color:yellow;">
 Share with your feedback
         </legend>
     <textarea  placeholder="write smth" class="input" id="text"></textarea>
